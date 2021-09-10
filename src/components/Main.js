@@ -24,8 +24,8 @@ function Popup({ cancel, updateConfigList }) {
         const eTime = eDateTime - parseInt(eDateTime/86400000)*86400000;
 
         const data = {
-            starttime: sTime,
-            endtime: eTime,
+            starttime: sTime/1000,
+            endtime: eTime/1000,
             relay: parseInt(relay.current.value)
         };
 
